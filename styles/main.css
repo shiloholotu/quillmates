@@ -1,0 +1,159 @@
+:root{
+    --font-color: rgb(50,50,50);
+    --bg-light-blue: rgb(242,242,247);
+    --light-transp-blue: rgb(0,0,50,0.1);
+    --dark-transp-blue:rgba(0,0,50,.3);
+    --light-shadow: 0 10px 30px rgb(0,0,50,0.1);
+    --pretty-green: rgb(140,223,130);
+    --pretty-yellow: rgb(255 216 107);
+    --pretty-red:rgb(255 109 109);
+    --pretty-purple:rgb(245 152 229);
+    --pretty-blue:rgb(98 168 239);
+    --navbar-gap: max(12vh,100px);
+    --lighter-font-color: rgb(111,111,111);
+}
+
+
+body{
+    margin:0;
+    background:var(--bg-light-blue);
+    font-family: 'Poppins';
+    color:var(--font-color);
+}
+
+#infoButton{
+    padding: 5px;
+    background: var(--pretty-blue);
+    border-radius: 100%;
+    margin: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition:.25s;
+    position:fixed;
+}
+
+#infoButton:hover{
+    transform:translate(0,-3px);
+}
+
+#logo img{
+    width: 200px;
+    display: block;
+    margin:auto;
+}
+#logo p{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+    opacity: .6;
+}
+
+#profile{
+    width: 80%;
+    margin: auto;
+    max-width: 350px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 50px var(--light-transp-blue);
+    padding: 10px;
+    padding-bottom:20px;
+    transition:.5s;
+}
+
+#headshot{
+    width: -webkit-fill-available;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#name{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#age{
+    font-weight: lighter;
+    opacity: .7;
+    margin-left: 10px;
+}
+
+#desc{
+    margin-top: 0;
+    opacity: .5;
+}
+
+#profile div{
+    display: flex;
+    justify-content: space-around;
+}
+
+#profile div img{
+    width: 30px;
+    cursor: pointer;
+    background-color: var(--font-color);
+    padding: 12px;
+    border-radius: 100%;
+    transition:.25s;
+}
+
+#profile div img:hover{
+    transform:translate(0,-5px);
+}
+
+.swipedLeft{
+    transform:translate(-150px,30px) rotate(-10deg);
+    opacity: 0;
+}
+
+.swipedRight{
+    transform:translate(150px,30px) rotate(10deg);
+    opacity: 0;
+}
+
+#backdrop{
+    position: fixed;
+    width:100vw;
+    height: 100vh;
+    left:0;
+    top:0;
+    backdrop-filter: blur(10px);
+    z-index:99;
+    transition:.5s;
+}
+
+#popup{
+    width: 80%;
+    max-width: 400px;
+    background-color: white;
+    z-index: 999;
+    position:fixed;
+    padding:20px;
+    box-shadow: 0 10px 50px var(--light-transp-blue);
+    border-radius: 20px;
+    left:50vw;
+    top:50vh;
+    transform:translate(-50%,-50%);
+    transition:.5s;
+}
+
+#popupText span{
+    font-weight: 600;
+}
+
+#popup button{
+    width: 100%;
+    background: var(--font-color);
+    color: var(--bg-light-blue);
+    font-family: 'Poppins';
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+#popup button:hover{
+    transform:translate(0,-5px);
+}

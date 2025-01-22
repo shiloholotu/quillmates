@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
+
+        <!-- our stylesheet-->
+        <link rel="stylesheet" href="styles/main.css">
+        
+        <title>Dead Poet Tinder</title>
+         
+    </head>
+    
+    <body>
+        <img id="infoButton" src="assets/info.svg" onclick="openPopup('info')">
+        <br>
+        <div id="logo">
+            <img src="assets/logo.png">
+            <p>For Dead Poets</p>
+        </div>
+
+        <div id="popup">
+
+            <div id="logo">
+                <img src="assets/logo.png">
+                <p>For Dead Poets</p>
+            </div>
+
+            <br>
+
+            <p id="popupText">
+                This is a presentation of different dead poets - in the form of a dating app! Click through differnt poets to find your match...
+                <br><br>
+                <span style="font-weight: 600;text-align: center;display: block;">Press <img src="assets/heart.svg" style="vertical-align: middle;"> to read more info on the poet
+                <br>Press <img src="assets/x.svg" style="vertical-align: middle;"> to see the next poet</span>
+            </p>
+
+            <br>
+
+            <button onclick="closePopup()">Close</button>
+
+        </div>
+        <div id="backdrop"></div>
+
+        <br><br>
+        <div id="profile">
+            <img id="headshot" src="https://image7.photobiz.com/6588/28_20190415064950_5454035_large.jpg">
+            <h1 id="name">Dead guy <span id="age">20</span></h1>
+            <p id="desc">Blah blah blah blah description stuff i like long walks on the beach and stuff</p>
+            <div>
+                <img src="assets/x.svg" onclick="swipe(0)">
+                <img src="assets/heart.svg" onclick="openPopup(0)">
+            </div>
+        </div>
+        <br>
+
+        <script src="scripts/app.js"></script>
+        
+    </body>
+    
+</html>
