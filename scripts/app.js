@@ -41,12 +41,14 @@ function openPopup(id){
     setTimeout(function(){
         popup.style["opacity"] = "";
         backdrop.style["backdrop-filter"] = "blur(10px)";
+        backdrop.style["-webkit-backdrop-filter"] = "blur(10px)";
     },10);
 }
 
 function closePopup(){
     popup.style["opacity"] = "0";
     backdrop.style["backdrop-filter"] = "blur(0px)";
+    backdrop.style["-webkit-backdrop-filter"] = "blur(0px)";
     setTimeout(function(){
         popup.style["display"] = "none";
         backdrop.style["display"] = "none";
