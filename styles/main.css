@@ -169,6 +169,22 @@ body{
     transform:translate(0,-5px);
 }
 
+#index{
+    border: 2px solid var(--dark-transp-blue);
+    width: 40px;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom:2px;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    margin-right: 5px;
+    font-weight: 600;
+    color: rgb(0 0 50 / 50%);
+    outline:none;
+    text-align: center;
+    font-size: 16px;
+}
+
 @media only screen and (max-width: 950px) {
     #headshot{
         max-height: 200px;
