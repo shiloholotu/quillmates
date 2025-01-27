@@ -28,7 +28,10 @@ const poets = [
     ["coleridge", "Samuel Taylor Coleridge", 61, ["imagination", "nature", "supernatural", "adventure"]],
     ["elliot", "T.S. Elliot", 76, ["alienation", "modernity", "disillusionment", "fragmentation"]],
     ["plath", "Sylvia Plath", 30, ["intensity", "self-discovery", "mental health", "feminism"]],
-    ["angelou", "Maya Angelou", 86, ["strength", "empowerment", "equality", "freedom"]]
+    ["angelou", "Maya Angelou", 86, ["strength", "empowerment", "equality", "freedom"]],
+    ["ginsberg", "Allen Ginsberg", 70, ["rebellion", "counterculture", "freedom", "visionary"]],
+    ["poe", "Edgar Allan Poe", 40, ["death", "madness", "mystery", "obsession"]],
+    
 ];
 
 let poetInd = 0;
@@ -179,6 +182,24 @@ const popups = {
     Her work is all about overcoming obstacles and celebrating your worth in a world that’s constantly testing you.
     <br><br><span>Literary Movement</span><br>
     Harlem Renaissance
+    `,
+
+    12:`
+    <span>About me</span><br>
+    I’m the guy who questions everything, loves the weirdness of life, and isn’t afraid to shout my truth from the rooftops. Let’s run wild.
+    <br><br><span>Audience Appeal</span><br>
+    He’s all about rebellion, pushing boundaries, and embracing life’s chaos, especially when it feels a bit raw and real.
+    <br><br><span>Literary Movement</span><br>
+    Beat
+    `,
+
+    13:`
+    <span>About me</span><br>
+    I’m obsessed with the macabre, but I promise you it’s poetic. Come get lost in my dark, mysterious world—if you dare.
+    <br><br><span>Audience Appeal</span><br>
+    Poe is the perfect poet if you love all things creepy and mysterious, with a dash of tragic romance.
+    <br><br><span>Literary Movement</span><br>
+    Gothic
     `,
 }
 
