@@ -36,7 +36,7 @@ const poets = [
     ["browning","Elizabeth Barrett Browning", 55, ["love", "justice", "passion", "advocacy"]],
     ["rossetti", "Christina Rossetti", 64, ["desire", "innocence", "temptation", "sacrifice"]],
     ["blake", "William Blake", 69, ["innocence", "experience", "duality", "visionary"]],
-    ["yeats", "William Butler Yeats", , ["fate", "spirituality", "vision", "love"]]
+    ["yeats", "William Butler Yeats", 73, ["fate", "spirituality", "vision", "love"]]
     
 ];
 
