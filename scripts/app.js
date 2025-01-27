@@ -31,6 +31,8 @@ const poets = [
     ["angelou", "Maya Angelou", 86, ["strength", "empowerment", "equality", "freedom"]],
     ["ginsberg", "Allen Ginsberg", 70, ["rebellion", "counterculture", "freedom", "visionary"]],
     ["poe", "Edgar Allan Poe", 40, ["death", "madness", "mystery", "obsession"]],
+    ["lorde", "Audre Lorde", 58,["feminism", "liberation", "justice", "identity"]],
+    ["rilke", "Rainer Maria Rilke", 51, ["solitude", "growth", "beauty", "existentialism"]]
     
 ];
 
@@ -200,6 +202,23 @@ const popups = {
     Poe is the perfect poet if you love all things creepy and mysterious, with a dash of tragic romance.
     <br><br><span>Literary Movement</span><br>
     Gothic
+    `,
+    14:`
+    <span>About me</span><br>
+    I’m unapologetic, intersectional, and believe that every part of me is a weapon of liberation—join me in the fight for freedom and truth.
+    <br><br><span>Audience Appeal</span><br>
+    Fiercely authentic. Lorde’s poetry is all about embracing your identity and fighting for justice, no matter what.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
+    `,
+
+    15:`
+    <span>About me</span><br>
+    I seek deeper meaning in everything, believe in the power of solitude, and know that true beauty lies in the struggles we face.
+    <br><br><span>Audience Appeal</span><br>
+    Deep and introspective. Rilke’s poetry encourages you to reflect on your growth and find meaning in both the beautiful and painful parts of life.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
     `,
 }
 
