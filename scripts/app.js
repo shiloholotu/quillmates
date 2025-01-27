@@ -32,7 +32,11 @@ const poets = [
     ["ginsberg", "Allen Ginsberg", 70, ["rebellion", "counterculture", "freedom", "visionary"]],
     ["poe", "Edgar Allan Poe", 40, ["death", "madness", "mystery", "obsession"]],
     ["lorde", "Audre Lorde", 58,["feminism", "liberation", "justice", "identity"]],
-    ["rilke", "Rainer Maria Rilke", 51, ["solitude", "growth", "beauty", "existentialism"]]
+    ["rilke", "Rainer Maria Rilke", 51, ["solitude", "growth", "beauty", "existentialism"]],
+    ["browning","Elizabeth Barrett Browning", 55, ["love", "justice", "passion", "advocacy"]],
+    ["rossetti", "Christina Rossetti", 64, ["desire", "innocence", "temptation", "sacrifice"]],
+    ["blake", "William Blake", 69, ["innocence", "experience", "duality", "visionary"]],
+    ["yeats", "William Butler Yeats", , ["fate", "spirituality", "vision", "love"]]
     
 ];
 
@@ -220,6 +224,43 @@ const popups = {
     <br><br><span>Literary Movement</span><br>
     Modernism
     `,
+
+    16:`
+    <span>About me</span><br>
+    I’m all about passionate love and justice for those who can’t speak for themselves—let’s make this world a better place, together.
+    <br><br><span>Audience Appeal</span><br>
+    Love with a cause. Browning’s poetry celebrates passion while fighting for social justice and equality.
+    <br><br><span>Literary Movement</span><br>
+    Victorian
+    `,
+
+    17:`
+    <span>About me</span><br>
+    I’m sweet yet a little bit dark, questioning life’s desires and the consequences of giving into them—let’s find beauty in both joy and sorrow.
+    <br><br><span>Audience Appeal</span><br>
+    Sweet with a dark edge. Rossetti explores intense desires and the consequences of giving in to them in a way that’s both beautiful and haunting.
+    <br><br><span>Literary Movement</span><br>
+    Victorian
+    `,
+
+    18:`
+    <span>About me</span><br>
+    I see the world in contradictions—innocence and experience, heaven and hell. Let’s explore both sides of the coin, together.
+    <br><br><span>Audience Appeal</span><br>
+    Visionary and rebellious. Blake challenges the status quo, mixing innocence with experience to question everything about society and life.
+    <br><br><span>Literary Movement</span><br>
+    Romanticism
+    `,
+
+    19:`
+    <span>About me</span><br>
+    I’m obsessed with the eternal and the mystical. Let’s get lost in a world of dreams, fate, and ancient wisdom.
+    <br><br><span>Audience Appeal</span><br>
+    Mystical and philosophical. Yeats’ poetry explores fate, spirituality, and the eternal, making you think about life on a deeper level.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
+    `,
+
 }
 
 function openPopup(id){
