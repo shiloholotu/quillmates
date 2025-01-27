@@ -194,6 +194,6 @@ body{
 
 /* image preloading */
 body:after {
-    content: url("dead-poet-tinder/assets/angelou.png");
+    content: url("/dead-poet-tinder/assets/angelou.png");
     display: none;
 }
