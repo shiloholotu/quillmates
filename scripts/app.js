@@ -40,6 +40,14 @@ const poets = [
     
 ];
 
+//preload images
+let preloadString = "";
+for(let i of poets){
+    preloadString += "url('/dead-poet-tinder/assets/"+i[0]+".png'),"
+}
+preloadString = preloadString.slice(0,-1);
+document.getElementById("preloadImages").style["background-image"] = preloadString;
+
 let poetInd = 0;
 
 
