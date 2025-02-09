@@ -64,7 +64,11 @@ const poets = [
     ["harjo", "Joy Harjo", 73, ["spiritual", "resilient", "cultural", "lyrical"]],
     ["bukowski", "Charles Bukowski", 73, ["gritty", "cynical", "raw", "dark"]],
     ["vuong", "Ocean Vuong", 36, ["intimate", "emotional", "modern", "vulnerable"]],
-    ["giovanni", "Nikki Giovanni", 81, ["joyful", "bold", "empowering", "honest"]]
+    ["giovanni", "Nikki Giovanni", 81, ["joyful", "bold", "empowering", "honest"]],
+    ["doolittle", "Hilda Doolittle (H.D.)",75, ["precise", "mythological", "symbolic", "feminine"]],
+    ["sappho", "Sappho", 40, ["passionate", "intimate", "yearning", "timeless"]],
+    ["carson", "Anne Carson", 74, ["experimental", "intellectual", "mythic", "haunting"]],
+    ["millay", "Edna St. Vincent Millay", 58, ["passionate", "rebellious", "romantic", "independent"]]
     
     
 ];
@@ -548,6 +552,43 @@ const popups = {
     Giovanni’s poetry is inspiring and uplifting, perfect for anyone who loves celebrating identity and finding strength in community.
     <br><br><span>Literary Movement</span><br>
     Black Arts Movement
+    `,
+
+    48:`
+    <span>About me</span><br>
+    I craft words like sharp-cut gems—my passions are myth, clarity, and the beauty of simplicity.
+    <br><br><span>Audience Appeal</span><br>
+    H.D.’s poetry is like an aesthetic Instagram feed: minimalist, precise, and loaded with mythological vibes. 
+    <br><br><span>Literary Movement</span><br>
+    Imagism
+    `,
+
+    
+    49:`
+    <span>About me</span><br>
+    Love is a fire, and I am here to burn—join me if you dare to feel.
+    <br><br><span>Audience Appeal</span><br>
+    Sappho’s poetry is raw, emotional, and all about yearning. She’s the OG sad girl, perfect for romantics and heartbroken souls.
+    <br><br><span>Literary Movement</span><br>
+    Ancient Greek
+    `,
+
+    50:`
+    <span>About me</span><br>
+    I blend myth, philosophy, and heartbreak into strange and wonderful stories—come get lost in my labyrinth.
+    <br><br><span>Audience Appeal</span><br>
+    Carson is like an indie film director in poetry form: experimental, brainy, and deeply emotional for anyone who loves edgy and weirdly beautiful stuff.
+    <br><br><span>Literary Movement</span><br>
+    Contemporary, Postmodernism
+    `,
+
+    51:`
+    <span>About me</span><br>
+    I live for passion, poetry, and late-night adventures—let’s burn the candle at both ends.
+    <br><br><span>Audience Appeal</span><br>
+    Millay’s poetry is for rebels and free spirits who love the idea of living fast and feeling everything deeply.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
     `,
     
 
