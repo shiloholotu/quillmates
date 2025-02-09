@@ -68,7 +68,11 @@ const poets = [
     ["doolittle", "Hilda Doolittle (H.D.)",75, ["precise", "mythological", "symbolic", "feminine"]],
     ["sappho", "Sappho", 40, ["passionate", "intimate", "yearning", "timeless"]],
     ["carson", "Anne Carson", 74, ["experimental", "intellectual", "mythic", "haunting"]],
-    ["millay", "Edna St. Vincent Millay", 58, ["passionate", "rebellious", "romantic", "independent"]]
+    ["millay", "Edna St. Vincent Millay", 58, ["passionate", "rebellious", "romantic", "independent"]],
+    ["dove", "Rita Dove", 72,["historical", "reflective", "lyrical", "elegant"]],
+    ["oliver", "Mary Oliver", 83, ["nature", "joyful", "mindful", "simple"]],
+    ["macewen", "Gwendolyn MacEwen", 46, ["mythic", "mystical", "introspective","lyrical"]],
+    ["clifton", "Lucille Clifton", 73, ["joyful", "honest", "resilient", "celebratory"]]
     
     
 ];
@@ -590,6 +594,42 @@ const popups = {
     <br><br><span>Literary Movement</span><br>
     Modernism
     `,
+
+    52:`
+    <span>About me</span><br>
+    I write about history, identity, and finding beauty in the everyday—let’s create our own legacy together.
+    <br><br><span>Audience Appeal</span><br>
+    Dove’s poetry feels like a thoughtful deep-dive into personal and collective history, perfect for reflective souls and storytellers.
+    <br><br><span>Literary Movement</span><br>
+    Contemporary
+    `,
+
+    53:`
+    <span>About me</span><br>
+    Nature is my muse, and joy is my goal—let’s take a walk and marvel at the world.
+    <br><br><span>Audience Appeal</span><br>
+    Oliver is the cottagecore poet who makes you want to escape into nature and find the beauty in small moments.
+    <br><br><span>Literary Movement</span><br>
+    Contemporary
+    `,
+
+    54:`
+    <span>About me</span><br>
+    I channel myth and mystery into poetry that bridges the real and surreal—let’s unlock hidden worlds together.
+    <br><br><span>Audience Appeal</span><br>
+    MacEwen’s poetry is dreamy and introspective, perfect for anyone who loves mystical vibes and thinking about the unknown.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
+    `,
+
+    55:`
+    <span>About me</span><br>
+    I celebrate life, resilience, and the beauty of survival—let’s toast to the joy of simply being.
+    <br><br><span>Audience Appeal</span><br>
+    Clifton’s poetry is empowering, short, and powerful—perfect for anyone who needs a reminder to find strength in themselves.
+    <br><br><span>Literary Movement</span><br>
+    Contemporary
+    `
     
 
 }
