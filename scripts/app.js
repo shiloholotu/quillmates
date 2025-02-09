@@ -56,7 +56,15 @@ const poets = [
     ["das", "Kamala Das", 75, ["feminist", "bold", "sensual", "honest"]],
     ["donne", "John Donne", 59, ["intellectual", "passionate", "spiritual", "complex"]],
     ["ali", "Agha Shahid Ali", 52, ["nostalgic", "lyrical", "melancholic", "cultural"]],
-    ["hardy", "Thomas Hardy", 87, ["melancholic", "romantic", "nature", "fate"]]
+    ["hardy", "Thomas Hardy", 87, ["melancholic", "romantic", "nature", "fate"]],
+    ["pound", "Ezra Pound", 87, ["experimental", "precise", "intellectual", "innovative"]],
+    ["lorca", "Federico Garcia Lorca", 38,["lyrical", "mysterious", "romantic", "tragic"]],
+    ["rankine", "Claudia Rankine", 61, ["bold", "political", "honest", "reflective"]],
+    ["tagore", "Rabindranath Tagor", 80, ["spiritual", "romantic", "universal", "lyrical"]],
+    ["harjo", "Joy Harjo", 73, ["spiritual", "resilient", "cultural", "lyrical"]],
+    ["bukowski", "Charles Bukowski", 73, ["gritty", "cynical", "raw", "dark"]],
+    ["vuong", "Ocean Vuong", 36, ["intimate", "emotional", "modern", "vulnerable"]],
+    ["giovanni", "Nikki Giovanni", 81, ["joyful", "bold", "empowering", "honest"]]
     
     
 ];
@@ -468,6 +476,78 @@ const popups = {
     Hardy’s poetry hits like that one heartbreak song you listen to on repeat—deep, emotional, and perfect for moody vibes.
     <br><br><span>Literary Movement</span><br>
     Victorian
+    `,
+
+    40:`
+    <span>About me</span><br>
+    Make it new—that’s my vibe, whether it’s words, forms, or life itself.
+    <br><br><span>Audience Appeal</span><br>
+    Pound’s poetry is like avant-garde art: experimental, bold, and ideal for anyone who loves breaking the mold.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
+    `,
+
+    41:`
+    <span>About me</span><br>
+    I write about love, death, and the magic in the everyday—let’s get lost in the beauty of the moonlight.
+    <br><br><span>Audience Appeal</span><br>
+    Lorca’s poetry feels like a surreal dream with all the feels—perfect for romantics who love a touch of mystery
+    <br><br><span>Literary Movement</span><br>
+    Modernism, Surrealism
+    `,
+
+    42:`
+    <span>About me</span><br>
+    I confront racism, identity, and justice through raw, poetic truth—let’s talk about what really matters.
+    <br><br><span>Audience Appeal</span><br>
+    Rankine’s work is straight-up powerful and essential for anyone who cares about social issues and wants poetry with meaning.
+    <br><br><span>Literary Movement</span><br>
+    Contemporary
+    `,
+
+    43:`
+    <span>About me</span><br>
+    I mix spirituality, love, and nature into songs of the soul—let’s connect on a deeper level.
+    <br><br><span>Audience Appeal</span><br>
+    Tagore’s poetry is for anyone who loves soulful, poetic vibes that are as timeless as a sunset.
+    <br><br><span>Literary Movement</span><br>
+    Romanticism
+    `,
+
+    44:`
+    <span>About me</span><br>
+    I weave stories of heritage, spirituality, and resilience into poems that sing—let’s honor the journey together.
+    <br><br><span>Audience Appeal</span><br>
+    Harjo’s poetry is beautifully grounded and perfect for anyone who values culture, connection, and spirituality.
+    <br><br><span>Literary Movement</span><br>
+    Contemporary
+    `,
+
+    45:`
+    <span>About me</span><br>
+    Life’s messy, gritty, and a little drunk—let’s skip the small talk and get real.
+    <br><br><span>Audience Appeal</span><br>
+    Bukowski is like a dive bar poet—raw, cynical, and perfect for anyone who loves the unfiltered, no-BS side of life.
+    <br><br><span>Literary Movement</span><br>
+    Dirty Realism
+    `,
+
+    46:`
+    <span>About me</span><br>
+    I turn pain and beauty into poetry that whispers and shouts—let’s explore love, loss, and everything in between.
+    <br><br><span>Audience Appeal</span><br>
+    Vuong’s poetry is deeply emotional and modern, resonating with anyone who loves introspective, heartfelt writing.
+    <br><br><span>Literary Movement</span><br>
+    Contemporary, Postmodernism
+    `,
+
+    47:`
+    <span>About me</span><br>
+    I celebrate Black joy, love, and power through my poetry—let’s rise together.
+    <br><br><span>Audience Appeal</span><br>
+    Giovanni’s poetry is inspiring and uplifting, perfect for anyone who loves celebrating identity and finding strength in community.
+    <br><br><span>Literary Movement</span><br>
+    Black Arts Movement
     `,
     
 
