@@ -36,7 +36,28 @@ const poets = [
     ["browning","Elizabeth Barrett Browning", 55, ["love", "justice", "passion", "advocacy"]],
     ["rossetti", "Christina Rossetti", 64, ["desire", "innocence", "temptation", "sacrifice"]],
     ["blake", "William Blake", 69, ["innocence", "experience", "duality", "visionary"]],
-    ["yeats", "William Butler Yeats", 73, ["fate", "spirituality", "vision", "love"]]
+    ["yeats", "William Butler Yeats", 73, ["fate", "spirituality", "vision", "love"]],
+    ["thomas", "Dylan Thomas", 39, ["passion", "mortality", "nature", "emotion"]],
+    ["heaney", "Seamus Heaney", 74, ["heritage", "nature", "identity", "memory"]],
+    ["lowell", "Robert Lowell", 60, ["honesty", "chaos", "vulnerability", "self-reflection"]],
+    ["rich", "Adrienne Rich", 82, ["feminism", "identity", "resistance", "justice"]],
+    ["bishop", "Elizabeth Bishop", 68,["precision", "observation", "travel", "restraint"]],
+    ["sexton", "Anne Sexton", 45, ["vulnerability", "taboo", "darkness", "honesty"]],
+    ["brooks", "Gwendolyn Brooks", 83, ["realism", "community", "resilience", "empowerment"]],
+    ["cummings", "e.e cummings", 67, ["playful", "experimental", "romantic", "innovative"]],
+    ["neruda", "Pablo Neruda", 69, ["passionate", "romantic", "lyrical", "sensual"]],
+    ["rumi", "Rumi", 66, ["spiritual", "romantic", "timeless", "mystical"]],
+    ["sandburg", "Carl Sandburg", 89, ["gritty", "realistic", "urban", "honest"]],
+    ["hughes", "Ted Hughes", 68, ["brutal", "primal", "wild", "dark"]],
+    ["gluck", "Louise Gluck", 80, ["minimalism", "nature", "introspection", "morality"]],
+    ["walcott", "Derek Walcott", 87, ["identity", "history", "landscape", "myth"]],
+    ["larkin", "Philip Larkin", 63, ["cynicism", "mortality", "mundanity", "nostalgia"]],
+    ["auden", "W.H. Auden", 66, ["intellect", "love", "society", "irony"]],
+    ["das", "Kamala Das", 75, ["feminist", "bold", "sensual", "honest"]],
+    ["donne", "John Donne", 59, ["intellectual", "passionate", "spiritual", "complex"]],
+    ["ali", "Agha Shahid Ali", 52, ["nostalgic", "lyrical", "melancholic", "cultural"]],
+    ["hardy", "Thomas Hardy", 87, ["melancholic", "romantic", "nature", "fate"]]
+    
     
 ];
 
@@ -268,6 +289,187 @@ const popups = {
     <br><br><span>Literary Movement</span><br>
     Modernism
     `,
+
+    20:`
+    <span>About me</span><br>
+    I rage against the dying of the light and chase beauty in every breath—join me in living fully before the end.
+    <br><br><span>Audience Appeal</span><br>
+    Thomas is all about vibing with the wildness of life. His poems are intense, emotional, and perfect for those who love dramatic, heart-on-the-sleeve energy.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
+    `,
+
+    21:`
+    <span>About me</span><br>
+    Digging deep into roots, history, and the earth—I bring past and present together to uncover the meaning of it all.
+    <br><br><span>Audience Appeal</span><br>
+    Heaney’s like that friend who’s always grounded but philosophical. He makes the ordinary feel profound and connects personal experiences to history.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
+    `,
+
+    22:`
+    <span>About me</span><br>
+    My life’s an open book—messy, honest, and full of struggles, but it’s all there for you to see.
+    <br><br><span>Audience Appeal</span><br>
+    Lowell’s like a confessional influencer spilling raw, unfiltered truths. He’s perfect if you love real talk about emotions and mental health.
+    <br><br><span>Literary Movement</span><br>
+    Confessional
+    `,
+
+    23:`
+    <span>About me</span><br>
+    I question systems, embrace change, and write to uncover truths—let’s break free and build something better.
+    <br><br><span>Audience Appeal</span><br>
+    Rich is all about challenging the status quo. She’s perfect for those who love activism, feminism, and questioning societal norms.
+    <br><br><span>Literary Movement</span><br>
+    Postmodernism
+    `,
+
+    24:`
+    <span>About me</span><br>
+    I find beauty in the details and travel the world searching for meaning—let’s explore together.
+    <br><br><span>Audience Appeal</span><br>
+    Bishop’s poetry is subtle but hits hard, like a lo-fi playlist for your soul. She’s perfect for anyone who loves careful, observational writing.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
+    `,
+
+    25:`
+    <span>About me</span><br>
+    I’m dark, dramatic, and love exploring the taboos—let’s dive into the things no one talks about.
+    <br><br><span>Audience Appeal</span><br>
+    Sexton’s poetry is like a late-night deep talk session—raw, vulnerable, and unapologetically real. Perfect for those who crave emotional depth.
+    <br><br><span>Literary Movement</span><br>
+    Confessional
+    `,
+
+    26:`
+    <span>About me</span><br>
+    I write about real people and their struggles, joys, and triumphs—let’s keep it authentic and uplifting.
+    <br><br><span>Audience Appeal</span><br>
+    Brooks is for anyone who loves poetry that feels real and accessible. She captures everyday life and turns it into art that inspires.
+    <br><br><span>Literary Movement</span><br>
+    Harlem Renaissance, Modernism
+    `,
+
+    27:`
+    <span>About me</span><br>
+    i love breaking rules, playing with words, and seeing the world in new ways—join me if you’re open to surprises (and lowercase letters).
+    <br><br><span>Audience Appeal</span><br>
+    Like the artsy friend who’s always doodling in the margins, his playful and unique style appeals to anyone who loves creativity and thinking outside the box.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
+    `,
+
+    28:`
+    <span>About me</span><br>
+    I’m a hopeless romantic, a nature lover, and a fan of all things passionate—let’s write poetry in the stars.
+    <br><br><span>Audience Appeal</span><br>
+    Neruda is pure heart-eyes emoji. His romantic, sensual poetry is perfect for anyone who loves to feel deeply and dream big.
+    <br><br><span>Literary Movement</span><br>
+    Modernism, Surrealism
+    `,
+
+    29:`
+    <span>About me</span><br>
+    Lose yourself in love, find yourself in the infinite—let’s dance into eternity together.
+    <br><br><span>Audience Appeal</span><br>
+    Rumi is the ultimate vibe for spiritual seekers and romantics. His poetry feels like a cosmic hug and a reminder to live with love and purpose.
+    <br><br><span>Literary Movement</span><br>
+    Sufi Mysticism
+    `,
+
+    30:`
+    <span>About me</span><br>
+    I’m all about the hustle, the heart of the city, and finding poetry in everyday people and places.
+    <br><br><span>Audience Appeal</span><br>
+    Sandburg is the blue-collar poet who sees beauty in the grind. His poems hit hard for anyone who’s all about appreciating the realness of life.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
+    `,
+
+    31:`
+    <span>About me</span><br>
+    Wild, raw, and untamed—my words are as fierce as the nature that inspires them.
+    <br><br><span>Audience Appeal</span><br>
+    Hughes is like the dark, moody playlist for your inner wild child. His poetry taps into the primal and untamed parts of life.
+    <br><br><span>Literary Movement</span><br>
+    Modernism, Postmodernism
+    `,
+
+    32:`
+    <span>About me</span><br>
+    I’m a hopeless romantic, a nature lover, and a fan of all things passionate—let’s write poetry in the stars.
+    <br><br><span>Audience Appeal</span><br>
+     The poetic minimalist who turns your inner monologue into art—raw, honest, and perfect for your “healing era.”
+    <br><br><span>Literary Movement</span><br>
+    Postmodernism
+    `,
+
+    33:`
+    <span>About me</span><br>
+    Lose yourself in love, find yourself in the infinite—let’s dance into eternity together.
+    <br><br><span>Audience Appeal</span><br>
+    The storyteller who blends Caribbean vibes with deep thoughts on identity—ideal for fans of rich imagery and cultural pride.
+    <br><br><span>Literary Movement</span><br>
+    Postcolonial
+    `,
+
+    34:`
+    <span>About me</span><br>
+    I’m all about the hustle, the heart of the city, and finding poetry in everyday people and places.
+    <br><br><span>Audience Appeal</span><br>
+    The original “it’s giving nihilism” poet, serving up relatable cynicism about life, love, and existential dread.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
+    `,
+
+    35:`
+    <span>About me</span><br>
+    Wild, raw, and untamed—my words are as fierce as the nature that inspires them.
+    <br><br><span>Audience Appeal</span><br>
+    The intellectual with a heart, balancing witty social critiques with deeply emotional truths—like a playlist that’s half indie hits and half sad bangers.
+    <br><br><span>Literary Movement</span><br>
+    Modernism
+    `,
+
+    36:`
+    <span>About me</span><br>
+    I write about love, freedom, and being unapologetically myself—let’s break the rules together.
+    <br><br><span>Audience Appeal</span><br>
+    Kamala Das is for anyone who loves raw, feminist energy and poetry that defies conventions and societal expectations.
+    <br><br><span>Literary Movement</span><br>
+    Postcolonialism, Confessional
+    `,
+
+    37:`
+    <span>About me</span><br>
+    I mix spirituality with seduction and find God in love—join me if you like paradoxes and passion.
+    <br><br><span>Audience Appeal</span><br>
+    Donne’s poetry is like a philosophical Tinder bio: sexy, spiritual, and full of contradictions that somehow work.
+    <br><br><span>Literary Movement</span><br>
+    Metaphysical
+    `,
+
+    38:`
+    <span>About me</span><br>
+    I weave nostalgia, longing, and love into ghazals that sing of home and exile—let’s find belonging together.
+    <br><br><span>Audience Appeal</span><br>
+    Ali’s poetry is all about yearning and cultural connection, perfect for anyone who feels caught between places or identities.
+    <br><br><span>Literary Movement</span><br>
+    Modernism, Postcolonialism
+    `,
+
+    39:`
+    <span>About me</span><br>
+    I write about love and loss with a side of existential dread—let’s walk under gloomy skies together.
+    <br><br><span>Audience Appeal</span><br>
+    Hardy’s poetry hits like that one heartbreak song you listen to on repeat—deep, emotional, and perfect for moody vibes.
+    <br><br><span>Literary Movement</span><br>
+    Victorian
+    `,
+    
 
 }
 
