@@ -149,6 +149,9 @@ body{
     transition:.5s;
 }
 
+#popup a{
+    display: block;
+}
 #popupText span{
     font-weight: 600;
 }

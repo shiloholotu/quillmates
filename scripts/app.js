@@ -17,62 +17,286 @@ function swipe(){
 }
 
 const poets = [
-    ["shakespeare", "Shakespeare", 52, ["love","drama","fate","passion"]],
-    ["emily", "Emily Dickinson", 55, ["death", "solitude", "nature", "mystery"]],
-    ["walt", "Walt Whitman", 72, ["freedom", "identity", "nature", "equality"]],
-    ["langston", "Langston Hughes", 66, ["dream", "justice", "heritage", "resilience"]],
-    ["frost", "Robert Frost", 88, ["nature", "choices", "reflection", "isolation"]],
-    ["keats", "John Keats", 25, ["beauty","transience", "love", "sensuality"]],
-    ["percy", "Percy Shelley", 29, ["rebellion", "nature", "freedom", "idealism"]],
-    ["wordsworth", "William Wordsworth", 80, ["nature", "reflection", "memory", "simplicity"]],
-    ["coleridge", "Samuel Taylor Coleridge", 61, ["imagination", "nature", "supernatural", "adventure"]],
-    ["elliot", "T.S. Elliot", 76, ["alienation", "modernity", "disillusionment", "fragmentation"]],
-    ["plath", "Sylvia Plath", 30, ["intensity", "self-discovery", "mental health", "feminism"]],
-    ["angelou", "Maya Angelou", 86, ["strength", "empowerment", "equality", "freedom"]],
-    ["ginsberg", "Allen Ginsberg", 70, ["rebellion", "counterculture", "freedom", "visionary"]],
-    ["poe", "Edgar Allan Poe", 40, ["death", "madness", "mystery", "obsession"]],
-    ["lorde", "Audre Lorde", 58,["feminism", "liberation", "justice", "identity"]],
-    ["rilke", "Rainer Maria Rilke", 51, ["solitude", "growth", "beauty", "existentialism"]],
-    ["browning","Elizabeth Barrett Browning", 55, ["love", "justice", "passion", "advocacy"]],
-    ["rossetti", "Christina Rossetti", 64, ["desire", "innocence", "temptation", "sacrifice"]],
-    ["blake", "William Blake", 69, ["innocence", "experience", "duality", "visionary"]],
-    ["yeats", "William Butler Yeats", 73, ["fate", "spirituality", "vision", "love"]],
-    ["thomas", "Dylan Thomas", 39, ["passion", "mortality", "nature", "emotion"]],
-    ["heaney", "Seamus Heaney", 74, ["heritage", "nature", "identity", "memory"]],
-    ["lowell", "Robert Lowell", 60, ["honesty", "chaos", "vulnerability", "self-reflection"]],
-    ["rich", "Adrienne Rich", 82, ["feminism", "identity", "resistance", "justice"]],
-    ["bishop", "Elizabeth Bishop", 68,["precision", "observation", "travel", "restraint"]],
-    ["sexton", "Anne Sexton", 45, ["vulnerability", "taboo", "darkness", "honesty"]],
-    ["brooks", "Gwendolyn Brooks", 83, ["realism", "community", "resilience", "empowerment"]],
-    ["cummings", "e.e cummings", 67, ["playful", "experimental", "romantic", "innovative"]],
-    ["neruda", "Pablo Neruda", 69, ["passionate", "romantic", "lyrical", "sensual"]],
-    ["rumi", "Rumi", 66, ["spiritual", "romantic", "timeless", "mystical"]],
-    ["sandburg", "Carl Sandburg", 89, ["gritty", "realistic", "urban", "honest"]],
-    ["hughes", "Ted Hughes", 68, ["brutal", "primal", "wild", "dark"]],
-    ["gluck", "Louise Gluck", 80, ["minimalism", "nature", "introspection", "morality"]],
-    ["walcott", "Derek Walcott", 87, ["identity", "history", "landscape", "myth"]],
-    ["larkin", "Philip Larkin", 63, ["cynicism", "mortality", "mundanity", "nostalgia"]],
-    ["auden", "W.H. Auden", 66, ["intellect", "love", "society", "irony"]],
-    ["das", "Kamala Das", 75, ["feminist", "bold", "sensual", "honest"]],
-    ["donne", "John Donne", 59, ["intellectual", "passionate", "spiritual", "complex"]],
-    ["ali", "Agha Shahid Ali", 52, ["nostalgic", "lyrical", "melancholic", "cultural"]],
-    ["hardy", "Thomas Hardy", 87, ["melancholic", "romantic", "nature", "fate"]],
-    ["pound", "Ezra Pound", 87, ["experimental", "precise", "intellectual", "innovative"]],
-    ["lorca", "Federico Garcia Lorca", 38,["lyrical", "mysterious", "romantic", "tragic"]],
-    ["rankine", "Claudia Rankine", 61, ["bold", "political", "honest", "reflective"]],
-    ["tagore", "Rabindranath Tagor", 80, ["spiritual", "romantic", "universal", "lyrical"]],
-    ["harjo", "Joy Harjo", 73, ["spiritual", "resilient", "cultural", "lyrical"]],
-    ["bukowski", "Charles Bukowski", 73, ["gritty", "cynical", "raw", "dark"]],
-    ["vuong", "Ocean Vuong", 36, ["intimate", "emotional", "modern", "vulnerable"]],
-    ["giovanni", "Nikki Giovanni", 81, ["joyful", "bold", "empowering", "honest"]],
-    ["doolittle", "Hilda Doolittle (H.D.)",75, ["precise", "mythological", "symbolic", "feminine"]],
-    ["sappho", "Sappho", 40, ["passionate", "intimate", "yearning", "timeless"]],
-    ["carson", "Anne Carson", 74, ["experimental", "intellectual", "mythic", "haunting"]],
-    ["millay", "Edna St. Vincent Millay", 58, ["passionate", "rebellious", "romantic", "independent"]],
-    ["dove", "Rita Dove", 72,["historical", "reflective", "lyrical", "elegant"]],
-    ["oliver", "Mary Oliver", 83, ["nature", "joyful", "mindful", "simple"]],
-    ["macewen", "Gwendolyn MacEwen", 46, ["mythic", "mystical", "introspective","lyrical"]],
-    ["clifton", "Lucille Clifton", 73, ["joyful", "honest", "resilient", "celebratory"]]
+    ["shakespeare", "Shakespeare", 52, ["love","drama","fate","passion"], 
+        ["Sonnet 18", "https://www.poetryfoundation.org/poems/45087/sonnet-18-shall-i-compare-thee-to-a-summers-day",],
+        ["Sonnet 116", "https://www.poetryfoundation.org/poems/45106/sonnet-116-let-me-not-to-the-marriage-of-true-minds"],
+        ["Venus and Adonis", "https://www.poetryfoundation.org/poems/56962/venus-and-adonis-56d239f8f109c"]
+    ],
+    ["emily", "Emily Dickinson", 55, ["death", "solitude", "nature", "mystery"],
+        ["Because I could not stop for Death","https://www.poetryfoundation.org/poems/47652/because-i-could-not-stop-for-death-479"],
+        ["Hope is the thing with feathers", "https://www.poetryfoundation.org/poems/42889/hope-is-the-thing-with-feathers-314"],
+        ["I'm Nobody! Who are you?", "https://www.poetryfoundation.org/poems/1647321/im-nobody-who-are-you"]
+    ],
+    ["walt", "Walt Whitman", 72, ["freedom", "identity", "nature", "equality"],
+        ["Song of Myself",'https://www.poetryfoundation.org/poems/45477/song-of-myself-1892-version'],
+        ["O Captain! My Captain!", "https://www.poetryfoundation.org/poems/45474/o-captain-my-captain"],
+        ["When Lilacs Last in the Dooryard Bloom'd", "https://www.poetryfoundation.org/poems/45480/when-lilacs-last-in-the-dooryard-bloomd"],
+    ],
+    ["langston", "Langston Hughes", 66, ["dream", "justice", "heritage", "resilience"],
+        ["The Negro Speaks of Rivers", "https://www.poetryfoundation.org/poems/44428/the-negro-speaks-of-rivers"],
+        ["Harlem (Dream Deferred)", "https://www.poetryfoundation.org/poems/46548/harlem"],
+        ["I, Too", "https://www.poetryfoundation.org/poems/47558/i-too"]
+    ],// 1
+    ["frost", "Robert Frost", 88, ["nature", "choices", "reflection", "isolation"],
+        ["The Road Not Taken", "https://www.poetryfoundation.org/poems/44272/the-road-not-taken"],
+        ["Stopping by Woods on a Snowy Evening", "https://www.poetryfoundation.org/poems/42891/stopping-by-woods-on-a-snowy-evening"],
+        ["Fire and Ice", "https://www.poetryfoundation.org/poems/44263/fire-and-ice"]
+    ],
+    ["keats", "John Keats", 25, ["beauty","transience", "love", "sensuality"],
+        ["Ode to a Nightingale", "https://www.poetryfoundation.org/poems/44479/ode-to-a-nightingale"],
+        ["Ode on a Grecian Urn", "https://www.poetryfoundation.org/poems/44477/ode-on-a-grecian-urn"],
+        ["To Autumn", "https://www.poetryfoundation.org/poems/44484/to-autumn"],
+    ],
+    ["percy", "Percy Shelley", 29, ["rebellion", "nature", "freedom", "idealism"],
+        ["Ozymandias", "https://www.poetryfoundation.org/poems/46565/ozymandias"],
+        ["To a Skylark", "https://www.poetryfoundation.org/poems/45146/to-a-skylark"],
+        ["Adonais", "https://www.poetryfoundation.org/poems/45112/adonais-an-elegy-on-the-death-of-john-keats"]
+    ],
+    ["wordsworth", "William Wordsworth", 80, ["nature", "reflection", "memory", "simplicity"],
+        ["I Wandered Lonely as a Cloud", "https://www.poetryfoundation.org/poems/45521/i-wandered-lonely-as-a-cloud"],
+        ["Tintern Abbey", "https://www.poetryfoundation.org/poems/45527/lines-composed-a-few-miles-above-tintern-abbey-on-revisiting-the-banks-of-the-wye-during-a-tour-july-13-1798"],
+        ["The Prelude", "https://www.poetryfoundation.org/poems/45543/the-prelude-book-2-school-time-continued"]
+    ],//2
+    ["coleridge", "Samuel Taylor Coleridge", 61, ["imagination", "nature", "supernatural", "adventure"],
+        ["The Rime of the Ancient Marine", "https://www.poetryfoundation.org/poems/43997/the-rime-of-the-ancient-mariner-text-of-1834"],
+        ["Kubla Khan", "https://www.poetryfoundation.org/poems/43991/kubla-khan"],
+        ["Christabel", "https://www.poetryfoundation.org/poems/43971/christabel"]
+    ],
+    ["elliot", "T.S. Eliot", 76, ["alienation", "modernity", "disillusionment", "fragmentation"],
+        ["The Waste Land", "https://www.poetryfoundation.org/poems/47311/the-waste-land"],
+        ["The Love Song of J. Alfred Prufrock", "https://www.poetryfoundation.org/poetrymagazine/poems/44212/the-love-song-of-j-alfred-prufrock"],
+        ["Sweeney among the Nightingales", "https://www.poetryfoundation.org/poems/52564/sweeney-among-the-nightingales"]
+    ],
+    ["plath", "Sylvia Plath", 30, ["intensity", "self-discovery", "mental health", "feminism"],
+        ["Daddy","https://www.poetryfoundation.org/poems/48999/daddy-56d22aafa45b2"],
+        ["Lady Lazarus", "https://www.poetryfoundation.org/poems/49000/lady-lazarus"],
+        ["Ariel", "https://www.poetryfoundation.org/poems/49001/ariel"]
+    ],
+    ["angelou", "Maya Angelou", 86, ["strength", "empowerment", "equality", "freedom"],
+        ["Still I Rise","https://www.poetryfoundation.org/poems/46446/still-i-rise"],
+        ["Phenomenal Woman", "https://www.poetryfoundation.org/poems/48985/phenomenal-woman"],
+        ["On the Pulse of Morning", "https://www.poetryfoundation.org/poems/48990/on-the-pulse-of-morning"]
+    ], // 3
+    ["ginsberg", "Allen Ginsberg", 70, ["rebellion", "counterculture", "freedom", "visionary"],
+        ["Howl", "https://www.poetryfoundation.org/poems/49303/howl"],
+        ["A Supermarket in California", "https://www.poetryfoundation.org/poems/47660/a-supermarket-in-california"],
+        ["Kaddish", "https://www.poetryfoundation.org/poems/49313/kaddish"]
+    ],
+    ["poe", "Edgar Allan Poe", 40, ["death", "madness", "mystery", "obsession"],
+        ["The Raven","https://www.poetryfoundation.org/poems/48860/the-raven"],
+        ["Annabel Lee", "https://www.poetryfoundation.org/poems/44885/annabel-lee"],
+        ["Eldorado", "https://www.poetryfoundation.org/poems/48634/eldorado-56d22a0920778"]
+    ],
+    ["lorde", "Audre Lorde", 58,["feminism", "liberation", "justice", "identity"],
+        ["A Litany for Survival", "https://www.poetryfoundation.org/poems/147275/a-litany-for-survival"],
+        ["Coal", "https://www.poetryfoundation.org/poems/42577/coal"],
+        ["Who Said It Was Simple", "https://www.poetryfoundation.org/poems/42587/who-said-it-was-simple"]
+    ],
+    ["rilke", "Rainer Maria Rilke", 51, ["solitude", "growth", "beauty", "existentialism"],
+        ["Plaster Cast Torso of Apollo", "https://www.poetryfoundation.org/poetrymagazine/poems/157722/plaster-cast-torso-of-apollo"],
+        ["Song of the Dwarf", "https://www.poetryfoundation.org/poetrymagazine/poems/54760/song-of-the-dwarf"],
+        ["The Beggars", "https://www.poetryfoundation.org/poetrymagazine/poems/50938/the-beggars-56d22e5bab5c2"]
+    ], // 4
+    ["browning","Elizabeth Barrett Browning", 55, ["love", "justice", "passion", "advocacy"],
+        ["How Do I Love Thee?", "https://www.poetryfoundation.org/poems/43742/sonnets-from-the-portuguese-43-how-do-i-love-thee-let-me-count-the-ways"],
+        ["The Cry of the Children", "https://www.poetryfoundation.org/poems/43725/the-cry-of-the-children"],
+        ["Aurora Leigh", "https://www.poetryfoundation.org/poems/145567/aurora-leigh-book-1"]
+    ],
+    ["rossetti", "Christina Rossetti", 64, ["desire", "innocence", "temptation", "sacrifice"],
+        ["Goblin Market", "https://www.poetryfoundation.org/poems/44996/goblin-market"],
+        ["Remember", "https://www.poetryfoundation.org/poems/45000/remember-56d224509b7ae"],
+        ["A Christmas Carol", "https://www.poetryfoundation.org/poems/53216/in-the-bleak-midwinter"]
+    ],
+    ["blake", "William Blake", 69, ["innocence", "experience", "duality", "visionary"],
+        ["The Tyger", "https://www.poetryfoundation.org/poems/43687/the-tyger"],
+        ["London", "https://www.poetryfoundation.org/poems/43673/london-56d222777e969"],
+        ["The Lamb", "https://www.poetryfoundation.org/poems/43670/the-lamb-56d222765a3e1"]
+    ],
+    ["yeats", "William Butler Yeats", 73, ["fate", "spirituality", "vision", "love"],
+        ["The Second Coming", "https://www.poetryfoundation.org/poems/43290/the-second-coming"],
+        ["The Lake Isle of Innisfree", "https://www.poetryfoundation.org/poems/43281/the-lake-isle-of-innisfree"],
+        ["When You Are Old", "https://www.poetryfoundation.org/poems/43283/when-you-are-old"]
+    ],// 5
+    ["thomas", "Dylan Thomas", 39, ["passion", "mortality", "nature", "emotion"],
+        ["Do Not Go Gentle into That Good Night","https://www.poetryfoundation.org/poems/46569/do-not-go-gentle-into-that-good-night"],
+        ["And Death Shall Have No Dominio", "https://poets.org/poem/and-death-shall-have-no-dominion"],
+        ["Fern Hill", "https://www.poetryfoundation.org/audio/77006/fern-hill"]
+    ],
+    ["heaney", "Seamus Heaney", 74, ["heritage", "nature", "identity", "memory"],
+        ["Digging", "https://www.poetryfoundation.org/poems/47555/digging"],
+        ["Death of a Naturalist", "https://www.poetryfoundation.org/poems/57040/death-of-a-naturalist"],
+        ["The Forge", "https://www.poetryfoundation.org/poems/57041/mid-term-break"]
+    ],
+    ["lowell", "Robert Lowell", 60, ["honesty", "chaos", "vulnerability", "self-reflection"],
+        ["For the Union Dead", "https://www.poetryfoundation.org/poems/57035/for-the-union-dead"],
+        ["The Quaker Graveyard in Nantucket", "https://www.poetryfoundation.org/poems/48984/the-quaker-graveyard-in-nantucket"],
+        ["Skunk Hour", "https://www.poetryfoundation.org/poems/47694/skunk-hour"]
+    ],
+    ["rich", "Adrienne Rich", 82, ["feminism", "identity", "resistance", "justice"],
+        ["Yom Kippur 1984", "https://www.poetryfoundation.org/poems/54069/yom-kippur-1984"],
+        ["What Kind of Times Are These", "https://www.poetryfoundation.org/poems/51092/what-kind-of-times-are-these"],
+        ["Planetarium", "https://www.poetryfoundation.org/poems/46568/planetarium-56d2267df376c"]
+    ], // 6
+    ["bishop", "Elizabeth Bishop", 68,["precision", "observation", "travel", "restraint"],
+        ["Filling Station", "https://www.poetryfoundation.org/poems/52193/filling-station"],
+        ["Crusoe in England", "https://www.poetryfoundation.org/poems/48287/crusoe-in-england"],
+        ["One Art", "https://www.poetryfoundation.org/poems/47536/one-art"]
+    ],
+    ["sexton", "Anne Sexton", 45, ["vulnerability", "taboo", "darkness", "honesty"],
+        ["Her Kind", "https://www.poetryfoundation.org/poems/42560/her-kind"],
+        ["Sylvia's Death", "https://www.poetryfoundation.org/poetrymagazine/browse?volume=103&issue=4&page=10"],
+        ["O Ye Tongues", "https://www.poetryfoundation.org/poems/152252/o-ye-tongues"]
+    ],
+    ["brooks", "Gwendolyn Brooks", 83, ["realism", "community", "resilience", "empowerment"],
+        ["The Bean Eaters", "https://www.poetryfoundation.org/poetrymagazine/poems/28110/the-bean-eaters"],
+        ["We Real Cool", "https://www.poetryfoundation.org/poetrymagazine/poems/28112/we-real-cool"],
+        ["Sadie and Maud", "https://www.poetryfoundation.org/poems/43311/sadie-and-maud"]
+    ],
+    ["cummings", "e.e cummings", 67, ["playful", "experimental", "romantic", "innovative"],
+        ["[i carry your heart with me(i carry it in]", "https://www.poetryfoundation.org/poetrymagazine/poems/49493/i-carry-your-heart-with-mei-carry-it-in"],
+        ["[anyone lived in a pretty how town]", "https://www.poetryfoundation.org/poetrymagazine/poems/22653/anyone-lived-in-a-pretty-how-town"],
+        ["[in Just-]", "https://www.poetryfoundation.org/poems/47247/in-just"]
+    ], // 7
+    ["neruda", "Pablo Neruda", 69, ["passionate", "romantic", "lyrical", "sensual"],
+        ["Ode to a Large Tuna in the Market", "https://www.poetryfoundation.org/poetrymagazine/poems/49322/ode-to-a-large-tuna-in-the-market"],
+        ["Finale","https://www.poetryfoundation.org/poems/49219/finale-56d22b187c637"],
+        ["The Other Men", "https://www.poetryfoundation.org/poetrymagazine/browse?volume=175&issue=3&page=7"]
+    ],
+    ["rumi", "Rumi", 66, ["spiritual", "romantic", "timeless", "mystical"],
+        ["Be Lost in the Call","https://www.rumi.org.uk/poems/#BeLostintheCall"],
+        ["O you who've gone on pilgrimage", "https://www.rumi.org.uk/poems/#Oyouwhovegoneonpilgrimage"],
+        ["We are as the flute","https://www.rumi.org.uk/poems/#Weareastheflute"]
+    ],
+    ["sandburg", "Carl Sandburg", 89, ["gritty", "realistic", "urban", "honest"],
+        ["A. E. F", "https://www.poetryfoundation.org/poems/57321/a-e-f"],
+        ["Doors", "https://www.poetryfoundation.org/poetrymagazine/poems/56415/doors-56d238e3affca"],
+        ["The Long Shadow of Lincoln: A Litany", "https://www.poetryfoundation.org/poems/53250/the-long-shadow-of-lincoln-a-litany"]
+    ],
+    ["hughes", "Ted Hughes", 68, ["brutal", "primal", "wild", "dark"],
+        ["The Horses", "https://www.poetryfoundation.org/poems/161873/the-horses"],
+        ["Bawdry Embraced", "https://www.poetryfoundation.org/poetrymagazine/poems/32387/bawdry-embraced-56d215ec2b37a"],
+        ["Small Hours", "https://www.poetryfoundation.org/poetrymagazine/poems/29575/small-hours"]
+    ], // 8
+    ["gluck", "Louise Gluck", 80, ["minimalism", "nature", "introspection", "morality"],
+        ["Aboriginal Landscape", "https://www.poetryfoundation.org/poetrymagazine/poems/56626/aboriginal-landscape"],
+        ["Visitors from Abroad", "https://www.poetryfoundation.org/poetrymagazine/poems/56625/visitors-from-abroad"],
+        ["Nocturne", "https://www.poetryfoundation.org/poetrymagazine/poems/56624/nocturne-56d2394b1421d"]
+    ],
+    ["walcott", "Derek Walcott", 87, ["identity", "history", "landscape", "myth"],
+        ["Omeros", "https://www.poetryfoundation.org/poems/48317/omeros"],
+        ["The Star-Apple Kingdom", "https://www.poetryfoundation.org/poems/150370/the-star-apple-kingdom"],
+        ["The Season of Phantasmal Peace", "https://www.poetryfoundation.org/poems/57412/the-season-of-phantasmal-peace"]
+    ],
+    ["larkin", "Philip Larkin", 63, ["cynicism", "mortality", "mundanity", "nostalgia"],
+        ["This Be The Verse", "https://www.poetryfoundation.org/poems/48419/this-be-the-verse"],
+        ["High Windows", "https://www.poetryfoundation.org/poems/48417/high-windows"],
+        ["The Whitsun Weddings", "https://www.poetryfoundation.org/poems/48411/the-whitsun-weddings"]
+    ],
+    ["auden", "W.H. Auden", 66, ["intellect", "love", "society", "irony"],
+        ["The Shield of Achilles", "https://www.poetryfoundation.org/poetrymagazine/poems/26040/the-shield-of-achilles"],
+        ["September 1, 1939", "https://poets.org/poem/september-1-1939"],
+        ["Funeral Blues", "https://allpoetry.com/funeral-blues"]
+    ], // 9
+    ["das", "Kamala Das", 75, ["feminist", "bold", "sensual", "honest"],
+        ["An Introduction", "https://www.poemhunter.com/poem/an-introduction-2/"],
+        ["The Looking Glass", "https://www.poemhunter.com/poem/the-looking-glass-11/"],
+        ["Words", "https://www.poemhunter.com/poem/words-431/"]
+    ],
+    ["donne", "John Donne", 59, ["intellectual", "passionate", "spiritual", "complex"],
+        ["The Flea", "https://www.poetryfoundation.org/poems/46467/the-flea"],
+        ["The Sun Rising", "https://www.poetryfoundation.org/poems/44129/the-sun-rising"],
+        ["The Good-Morrow", "https://www.poetryfoundation.org/poems/44104/the-good-morrow"]
+    ],
+    ["ali", "Agha Shahid Ali", 52, ["nostalgic", "lyrical", "melancholic", "cultural"],
+        ["Tonight", "https://www.poetryfoundation.org/poems/51652/tonight-56d22f898fcd7"],
+        ["Ghazal", "https://www.poetryfoundation.org/poems/43279/ghazal-56d221fe8a756"],
+        ["Vacating an Apartment", "https://www.poetryfoundation.org/poems/43278/vacating-an-apartment"]
+    ],
+    ["hardy", "Thomas Hardy", 87, ["melancholic", "romantic", "nature", "fate"],
+        ["The Darkling Thrush", "https://www.poetryfoundation.org/poems/44325/the-darkling-thrush"],
+        ["The Man He Killed", "https://www.poetryfoundation.org/poems/44329/the-man-he-killed"],
+        ["Neutral Tones", "https://www.poetryfoundation.org/poems/50364/neutral-tones"]
+    ], // 10
+    ["pound", "Ezra Pound", 87, ["experimental", "precise", "intellectual", "innovative"],
+        ["Three Cantos","https://www.poetryfoundation.org/poetrymagazine/poems/13764/canto-iii"],
+        ["In a Station of the Metro", "https://www.poetryfoundation.org/poetrymagazine/poems/12675/in-a-station-of-the-metro"],
+        ["Cantico del Sole", "https://www.poetryfoundation.org/poems/52318/cantico-del-sole"]
+    ],
+    ["lorca", "Federico Garcia Lorca", 38,["lyrical", "mysterious", "romantic", "tragic"],
+        ["Dreamwalking Ballad", "https://www.poetryfoundation.org/poems/161906/dreamwalking-ballad"],
+        ["Romance Sonambulo", "https://www.poetryfoundation.org/poems/161926/romance-sonambulo"],
+        ["Ballad of the Moon Moon", "https://www.poetryfoundation.org/poetrymagazine/poems/89729/ballad-of-the-moon-moon"]
+    ],
+    ["rankine", "Claudia Rankine", 61, ["bold", "political", "honest", "reflective"],
+        ["Cornel West makes the point", 'https://www.poetryfoundation.org/poems/57804/dont-let-me-be-lonely-cornel-west-makes-the-point'],
+        ["At the airport-security checkpoint", "https://www.poetryfoundation.org/poems/57802/dont-let-me-be-lonely-at-the-airport-security-checkpoint"],
+        ["I don't usually talk to strangers", "https://www.poetryfoundation.org/poems/57800/dont-let-me-be-lonely-i-dont-usually-talk-to-strangers"]
+    ],
+    ["tagore", "Rabindranath Tagore", 80, ["spiritual", "romantic", "universal", "lyrical"],
+        ["Gitanjali", "https://www.poetryfoundation.org/poems/45668/gitanjali-35"],
+        ["Come as you are", "https://www.poetryfoundation.org/poetrymagazine/poems/12690/come-as-you-are"],
+        ["Sing the song of the moment", "https://www.poetryfoundation.org/poetrymagazine/poems/143274/sing-the-song-of-the-moment-59444e12c5c59"]
+    ], // 11
+    ["harjo", "Joy Harjo", 73, ["spiritual", "resilient", "cultural", "lyrical"],
+        ["Granddaughters", "https://www.poetryfoundation.org/poems/159172/granddaughters"],
+        ["Memory Sack", "https://www.poetryfoundation.org/poems/157614/memory-sack"],
+        ["Becoming Seventy", "https://www.poetryfoundation.org/poetrymagazine/poems/143935/becoming-seventy"]
+    ],
+    ["bukowski", "Charles Bukowski", 73, ["gritty", "cynical", "raw", "dark"],
+        ["8 count", "https://www.poetryfoundation.org/poems/49699/8-count"],
+        ["I Am Visited by an Editor and a Poet", "https://www.poetryfoundation.org/poems/49586/i-am-visited-by-an-editor-and-a-poet"],
+        ["Interview by a Guggenheim Recipient","https://www.poetryfoundation.org/poems/49585/interview-by-a-guggenheim-recipient"]
+    ],
+    ["vuong", "Ocean Vuong", 36, ["intimate", "emotional", "modern", "vulnerable"],
+        ["Torso of Air", "https://www.poetryfoundation.org/poems/160778/torso-of-air"],
+        ["Devotion", "https://www.poetryfoundation.org/poems/160766/devotion-64c12e4a58856"],
+        ["Not Even This", "https://www.poetryfoundation.org/poetrymagazine/poems/152940/not-even-this"]
+    ],
+    ["giovanni", "Nikki Giovanni", 81, ["joyful", "bold", "empowering", "honest"],
+        ["Biography", "https://www.poetryfoundation.org/poems/161883/biography-65a930709ccc5"],
+        ["Knoxville, Tennessee", "https://www.poetryfoundation.org/poems/160376/knoxville-tennessee"],
+        ["The Longest Way 'Round", "https://www.poetryfoundation.org/poetrymagazine/poems/159790/the-longest-way-round"]
+    ], // 12
+    ["doolittle", "Hilda Doolittle (H.D.)",75, ["precise", "mythological", "symbolic", "feminine"],
+        ["Leda", "https://www.poetryfoundation.org/poems/47927/leda-56d228c3a5948"],
+        ["Heliodora", "https://www.poetryfoundation.org/poems/162075/heliodora"],
+        ["At Ithaca", "https://www.poetryfoundation.org/poems/162074/at-ithaca"]
+    ],
+    ["sappho", "Sappho", 40, ["passionate", "intimate", "yearning", "timeless"],
+        ["Univeristy of Houston Collection", "https://www.uh.edu/~cldue/texts/sappho.html"],
+        ["Univeristy of Houston Collection", "https://www.uh.edu/~cldue/texts/sappho.html"],
+        ["Univeristy of Houston Collection", "https://www.uh.edu/~cldue/texts/sappho.html"]
+    ],
+    ["carson", "Anne Carson", 74, ["experimental", "intellectual", "mythic", "haunting"],
+        ["Between Us And", "https://www.poetryfoundation.org/poems/158327/between-us-and"],
+        ["The Glass Essay", "https://www.poetryfoundation.org/poems/158039/vii-change"],
+        ["Clive Song", "https://www.poetryfoundation.org/poems/1592198/clive-song"]
+    ],
+    ["millay", "Edna St. Vincent Millay", 58, ["passionate", "rebellious", "romantic", "independent"],
+        ["She had forgotten how the August night", "https://www.poetryfoundation.org/poems/148568/she-had-forgotten-how-the-august-night"],
+        ["The white bark writhed and sputtered like a fish", "https://www.poetryfoundation.org/poems/148567/the-white-bark-writhed-and-sputtered-like-a-fish"],
+        ["Euclid alone has looked on Beauty bare.", "https://www.poetryfoundation.org/poems/148566/euclid-alone-has-looked-on-beauty-bare"]
+    ],
+    ["dove", "Rita Dove", 72,["historical", "reflective", "lyrical", "elegant"],
+        ["Dusting", "https://www.poetryfoundation.org/poetrymagazine/poems/55631/dusting-56d2376896ec7"],
+        ["Unaccompanied Anthem", "https://www.poetryfoundation.org/poetrymagazine/poems/159786/unaccompanied-anthem"],
+        ["Tarnished Psalm", "https://www.poetryfoundation.org/poetrymagazine/poems/159785/tarnished-psalm"]
+    ],
+    ["oliver", "Mary Oliver", 83, ["nature", "joyful", "mindful", "simple"],
+        ["Song for Autumn", "https://www.poetryfoundation.org/poetrymagazine/poems/42420/song-for-autumn"],
+        ["Breakage", "https://www.poetryfoundation.org/poetrymagazine/poems/41917/breakage"],
+        ["At Black River", "https://www.poetryfoundation.org/poetrymagazine/poems/41916/at-black-river"]
+    ],
+    ["macewen", "Gwendolyn MacEwen", 46, ["mythic", "mystical", "introspective","lyrical"],
+        ["Let Me Make This Perfectly Clear", "https://canpoetry.library.utoronto.ca/macewen/poem1.htm"],
+        ["Fragments from a Childhood", "https://canpoetry.library.utoronto.ca/macewen/poem2.htm"],
+        ["Magic Cats", "https://canpoetry.library.utoronto.ca/macewen/poem3.htm"]
+    ],
+    ["clifton", "Lucille Clifton", 73, ["joyful", "honest", "resilient", "celebratory"],
+        ["Homage To My Hips", "https://www.poemhunter.com/poem/homage-to-my-hips/"],
+        ["Good Times", "https://www.poemhunter.com/poem/good-times/"],
+        ["I Am Accused Of Tending To The Past", "https://www.poemhunter.com/poem/i-am-accused-of-tending-to-the-past/"]
+    ]
     
     
 ];
@@ -642,7 +866,12 @@ function openPopup(id){
     backdrop.style["display"] = "";
 
 
-    document.getElementById("popupText").innerHTML = popups[id];
+    document.getElementById("popupText").innerHTML = popups[id] + `
+    <br><br><span>Top 3 Poems</span><br>
+    <a href='${poets[id][4][1]}'>${poets[id][4][0]}</a>
+    <a href='${poets[id][5][1]}'>${poets[id][5][0]}</a>
+    <a href='${poets[id][6][1]}'>${poets[id][6][0]}</a>`;
+    
     
     setTimeout(function(){
         popup.style["opacity"] = "";
@@ -753,7 +982,3 @@ function continueIntro(index){
         },1000);
     }
 }
-
-
-orderPoets(["Contemporary"]);
-displayPoet();
