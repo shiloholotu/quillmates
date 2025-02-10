@@ -222,6 +222,10 @@ body{
     text-align:center;
 }
 
+#introContent img{
+    vertical-align: middle;
+}
+
 #eraTags{
     height: 30vh;
     overflow:auto;

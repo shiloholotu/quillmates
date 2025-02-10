@@ -676,6 +676,19 @@ function getMovements(){
 }
 
 function orderPoets(movements){
+
+    // shuffle first
+    for(let i = 0; i < poets.length; i++){
+        let rndIndex = i + parseInt(Math.random() * (poets.length-i));
+        let temp = poets[i];
+        poets[i] = poets[rndIndex];
+        poets[rndIndex] = temp;
+
+        temp = popups[i];
+        popups[i] = popups[rndIndex];
+        popups[rndIndex] = temp;
+    }
+
     for(let i = 0; i < poets.length; i++){
         let score = 0;
         for(let j of movements){
