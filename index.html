@@ -21,27 +21,25 @@
     </head>
     
     <body>
-        <img id="infoButton" src="assets/info.svg" onclick="openPopup('info')">
-        <br>
-        <div id="logo">
-            <img src="assets/logo.png">
-            <p>For Dead Poets</p>
-        </div>
-
-        <div id="popup">
-
-            <div id="logo">
-                <img src="assets/logo.png">
-                <p>For Dead Poets</p>
-            </div>
+        <div id="intro">
+            <h2 class="logoText"><img src="assets/logo.png">QuillMates</h2>
+            <p style="font-weight: 600;transform:translate(10px,0); margin:0;opacity:.7">Find your poet soulmate</p>
 
             <br>
+            <div id="introContent">
+                <p>This is a presentation of different poets - in the form of a dating app! Choose your preferences and click through the poets to learn more about them.</p>
+                <button onclick="continueIntro(0)">Continue</button>
+            </div>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <h2 class="logoText" onclick="location.reload()" style="cursor: pointer;"><img src="assets/logo.png">QuillMates</h2>
+            <p style="font-weight: 600;transform:translate(10px,0); margin:0;opacity:.7">Find your poet soulmate</p>
+        </div>
+
+        <div id="popup" style="display: none;">
 
             <p id="popupText">
-                This is a presentation of different dead poets - in the form of a dating app! Click through differnt poets to find your match...
-                <br><br>
-                <span style="font-weight: 600;text-align: center;display: block;">Press <img src="assets/heart.svg" style="vertical-align: middle;"> to read more info on the poet
-                <br>Press <img src="assets/x.svg" style="vertical-align: middle;"> to see the next poet</span>
             </p>
 
             <br>

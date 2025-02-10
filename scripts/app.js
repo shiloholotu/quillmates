@@ -77,6 +77,9 @@ const poets = [
     
 ];
 
+//function orderPoets()
+
+
 //preload images
 let preloadString = "";
 for(let i of poets){
@@ -429,7 +432,7 @@ const popups = {
     <br><br><span>Audience Appeal</span><br>
     The storyteller who blends Caribbean vibes with deep thoughts on identity—ideal for fans of rich imagery and cultural pride.
     <br><br><span>Literary Movement</span><br>
-    Postcolonial
+    Postcolonialism
     `,
 
     34:`
@@ -648,14 +651,96 @@ function openPopup(id){
     },10);
 }
 
-function closePopup(){
+function closePopup(speed = 500){
     popup.style["opacity"] = "0";
     backdrop.style["backdrop-filter"] = "blur(0px)";
     backdrop.style["-webkit-backdrop-filter"] = "blur(0px)";
     setTimeout(function(){
         popup.style["display"] = "none";
         backdrop.style["display"] = "none";
-    },500)
+    },speed)
 }
 
+closePopup(0);
+
+function getMovements(){
+    let movements = []
+    for(let i in popups){
+        if(i == "info") continue;
+        let cur = popups[i].split("<br><br><span>Literary Movement</span><br>\n")[1].replace("\n","").trim().split(", ");
+        for(let i of cur){
+            if(i != "") movements.push(i);
+        }
+    }
+    return [...new Set(movements)];
+}
+
+function orderPoets(movements){
+    for(let i = 0; i < poets.length; i++){
+        let score = 0;
+        for(let j of movements){
+            if(popups[i].includes(j)) score++;
+        }
+        poets[i].push(score);
+    }
+
+    let sorted = false;
+    let ln = poets[0].length;
+    while(!sorted){
+        sorted = true;
+        
+        for(let i = 0; i < poets.length-1; i++){
+            
+            if(poets[i][ln-1] < poets[i+1][ln-1]){
+                let temp = poets[i];
+                poets[i] = poets[i+1];
+                poets[i+1] = temp;
+
+                temp = popups[i];
+                popups[i] = popups[i+1];
+                popups[i+1] = temp;
+                sorted = false;
+            }
+        }
+    }
+    
+}
+
+let selectedEraTags = {}
+
+function toggleEraTag(era){
+    if(selectedEraTags[era] == null || selectedEraTags[era] == false){
+        selectedEraTags[era] = true;
+        document.getElementById(era).style["background"] = "var(--pretty-red)";
+    }
+    else{
+        selectedEraTags[era] = false;
+        document.getElementById(era).style["background"] = "";
+    }
+}
+
+function continueIntro(index){
+    if(index == 0){
+        let html = "<p style='font-weight:600'>Select tags that interest you</p><div id='eraTags'>";
+        for(let i of getMovements()){
+            html += `<span id='${i}' onclick="toggleEraTag('${i}')">${i}</span>`;
+        }
+        document.getElementById("introContent").innerHTML = html += "</div><button onclick='continueIntro(1)'>Continue</button>"
+    }
+    if(index == 1){
+        document.getElementById("intro").style["opacity"] = 0;
+        let selected = [];
+        for(let i in selectedEraTags){
+            if(selectedEraTags[i]) selected.push(i);
+        }
+        orderPoets(selected);
+        displayPoet();
+        setTimeout(function(){
+            document.getElementById("intro").style["display"] = "none";
+        },1000);
+    }
+}
+
+
+orderPoets(["Contemporary"]);
 displayPoet();

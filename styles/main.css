@@ -82,7 +82,7 @@ body{
     margin-bottom:10px;
     margin-top:10px;
 }
-#desc span{
+#desc span, #introContent span{
     padding:7px;
     padding-left:15px;
     padding-right: 15px;
@@ -94,7 +94,9 @@ body{
     margin-bottom: 5px;
 }
 
-
+#introContent span{
+    margin:2.5px;
+}
 
 
 #profile div img{
@@ -151,7 +153,7 @@ body{
     font-weight: 600;
 }
 
-#popup button{
+#popup button, #introContent button{
     width: 100%;
     background: var(--font-color);
     color: var(--bg-light-blue);
@@ -165,7 +167,7 @@ body{
     transition: .25s;
 }
 
-#popup button:hover{
+#popup button:hover, #introContent button:hover{
     transform:translate(0,-5px);
 }
 
@@ -185,6 +187,47 @@ body{
     font-size: 16px;
     background:transparent;
 }
+
+#intro{
+    background-color: var(--bg-light-blue);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    z-index: 999;
+    transition:1s;
+}
+
+.logoText{
+    font-weight: 600;
+    font-size: 2.5em; 
+    margin:0;
+}
+
+.logoText img{
+    width: 60px;
+    vertical-align: middle;
+    transform: translate(10px, -10px);
+}
+
+#introContent{
+    width: 80%;
+    max-width: 400px;
+    margin:auto;
+}
+
+#introContent p{
+    text-align:center;
+}
+
+#eraTags{
+    height: 30vh;
+    overflow:auto;
+    margin-bottom: 10px;
+}
+
 
 @media only screen and (max-width: 950px) {
     #headshot{
